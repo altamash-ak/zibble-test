@@ -6,7 +6,7 @@
   "scripts": {
     "sass:watch": "sass --watch styles/main.scss styles/sass.css",
     "tailwind:watch": "npx tailwindcss -i styles/sass.css -o public/styles.css --watch",
-    "build": "node-sass styles/main.scss styles/sass.css && npx tailwindcss -i styles/sass.css -o public/styles.css"
+    "build": "sass styles/main.scss styles/sass.css && npx tailwindcss -i styles/sass.css -o public/styles.css"
   },
   "author": "",
   "license": "ISC",

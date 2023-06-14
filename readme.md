@@ -1,4 +1,4 @@
-# NXT LABS - HTML SASS Tailwind
+# HTML SASS Tailwind
 
 Combination of HTML SASS and Tailwind.
 
