@@ -1,0 +1,18 @@
+{
+  "name": "html-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch styles/main.scss styles/sass.css",
+    "tailwind:watch": "npx tailwindcss -i styles/sass.css -o public/styles.css --watch",
+    "build": "node-sass styles/main.scss styles/sass.css && npx tailwindcss -i styles/sass.css -o public/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.56.2",
+    "tailwindcss": "^3.2.4"
+  }
+}
