@@ -95,6 +95,7 @@ header nav ul .hoverdrop:hover .dropdown {
 }
 
 .awards .wrapper {
+  @apply pt-[70px];
   /* the slides */
   /* the parent */
 }
@@ -114,30 +115,20 @@ header nav ul .hoverdrop:hover .dropdown {
   margin: 0 -20px;
 }
 .awards .wrapper .slide-arrow {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
+  @apply absolute top-[50%] -mt-[15px];
 }
 .awards .wrapper .prev-arrow {
-  left: -50px;
-  top: 60%;
-  width: 33px;
-  height: 33px;
   background: url(../public/images/back.png);
+  @apply -left-[50px] top-[60%] w-[33px] h-[33px];
 }
 .awards .wrapper .next-arrow {
-  right: -50px;
-  top: 60%;
-  width: 33px;
-  height: 33px;
   background: url(../public/images/next.png);
+  @apply -right-[50px] top-[60%] w-[33px] h-[33px];
 }
 .awards .wrapper .who-are-we {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  padding: 50px 50px 0;
+  background: url(../public/images/who-are-we.png);
+  @apply flex items-center
+        justify-center gap-[80px] pt-[50px] px-[50px];
 }
 .awards .wrapper .who-are-we h3 {
   @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-left capitalize text-[#ffffff];
@@ -145,8 +136,11 @@ header nav ul .hoverdrop:hover .dropdown {
 .awards .wrapper .who-are-we p {
   @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-left text-[#ffffff] px-0 pb-[34px];
 }
+.awards .wrapper .who-are-we .man-image img {
+  @apply opacity-80;
+}
 .awards .wrapper .who-are-we .para {
-  width: 50%;
+  @apply w-[75%];
 }
 
 .neon-btn {
