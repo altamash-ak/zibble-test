@@ -1,0 +1,72 @@
+header {
+  @apply flex justify-between items-center absolute top-0 w-full pt-[30px] px-[60px];
+  .logo {
+    img {
+      @apply w-[130px];
+    }
+  }
+  nav {
+    ul {
+      @apply flex gap-[30px];
+      li {
+        @apply cursor-pointer;
+        a {
+          @apply font-openSans not-italic font-normal text-[18px] leading-[18px] text-[#ffffff] capitalize p-[10px];
+        }
+      }
+      .hoverdrop {
+        @apply relative;
+        .dropdown {
+          @apply absolute hidden w-max bg-[#ffffff] right-1/2 rounded-[5px];
+          transform: translate(50%, 6%);
+          li {
+            @apply cursor-pointer;
+            a {
+              @apply block p-[10px] text-[#000000] ease-in-out duration-200 transition-all;
+            }
+            &:hover {
+              @apply bg-[#4f62c0] ease-in-out duration-500 transition-all;
+              a {
+                @apply text-[#ffffff];
+              }
+            }
+            &:first-child {
+              @apply rounded-t-[5px];
+            }
+            &:last-child {
+              @apply rounded-b-[5px];
+            }
+          }
+        }
+        &::after {
+          content: "";
+          background: url(../public/images/arrow-down.svg);
+          @apply absolute w-[10px] h-full bg-no-repeat bg-center bg-contain -right-[10px];
+        }
+        &:hover {
+          .dropdown {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+  .button {
+  }
+}
+.top {
+  background: url(../public/images/hero-bg.png);
+  @apply h-[100vh];
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.middle {
+  background: red;
+  @apply h-[100vh];
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}

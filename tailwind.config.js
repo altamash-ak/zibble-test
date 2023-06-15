@@ -2,7 +2,14 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        openSans: "Open Sans",
+        raleway: "Raleway",
+        poppins: "Poppins",
+        merriweather: "Merriweather",
+      },
+    },
   },
   plugins: [],
-}
+};

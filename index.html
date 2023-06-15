@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>HTML - Tailwind</title>
-    <link rel="stylesheet" href="public/styles.css">
+    <meta charset="UTF-8" />
+    <title>ZIBBLE - platinum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A brief description of your page" />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="/" />
+    <meta property="og:title" content="ZIBBLE - platinum" />
+    <meta
+      property="og:description"
+      content="A brief description of your page"
+    />
+    <meta property="og:image" content="https://www.example.com/image.jpg" />
+    <meta property="og:url" content="https://www.example.com/page" />
+    <link rel="stylesheet" href="public/styles.css" />
   </head>
 
   <body>
-    <p class="text-center">This text is centered</p>
+    <header>
+      <div class="logo">
+        <img src="./public/images/logo.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">packages</a></li>
+          <li class="hoverdrop">
+            <a href="#">services</a>
+            <ul class="dropdown">
+              <li><a href="#">Logo Designer</a></li>
+              <li><a href="#">Web Designer</a></li>
+              <li><a href="#">SEO Expert</a></li>
+              <li><a href="#">Logo Designer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <div class="button">
+        <a href="#">get a free quote</a>
+      </div>
+    </header>
+    <section class="top"></section>
+    <section class="middle"></section>
+    <footer></footer>
   </body>
 </html>

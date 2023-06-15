@@ -1,12 +1,5 @@
 @import "./vendors/tailwind.scss";
-
-p {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
-
-body {
-  @apply bg-slate-700;
-  p {
-    @apply text-black;
-  }
-}
+@import "utilities/fonts.scss";
+@import "utilities/reset.scss";
+@import "utilities/breakpoints.scss";
+@import "custom.scss";
