@@ -56,19 +56,19 @@ header {
   background: url(../public/images/hero-bg.png);
   @apply h-[764px] bg-no-repeat bg-top bg-cover;
   .wrapper {
-    @apply text-[#ffffff] text-center w-[797px] flex flex-col mx-auto pt-[190px] gap-[20px];
+    @apply text-[#ffffff] text-center w-[580px] flex flex-col mx-auto pt-[190px] gap-[20px];
     h1 {
-      @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+      @apply font-merriweather not-italic font-bold text-[40px] leading-[48px] text-center capitalize text-[#ffffff];
     }
     p {
-      @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff];
+      @apply font-openSans not-italic font-normal text-[13px] leading-[21px] text-center text-[#ffffff];
     }
   }
 }
 
 .awards {
   .wrapper {
-    h1 {
+    h2 {
       @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
     }
     p {
@@ -76,10 +76,6 @@ header {
     }
     .awards-slider {
       @apply w-[90%] mx-auto pt-[50px];
-      div {
-        img {
-        }
-      }
     }
     /* the slides */
     .slick-slide {
@@ -97,15 +93,34 @@ header {
     }
     .prev-arrow {
       left: -50px;
+      top: 60%;
       width: 33px;
       height: 33px;
       background: url(../public/images/back.png);
     }
     .next-arrow {
       right: -50px;
+      top: 60%;
       width: 33px;
       height: 33px;
       background: url(../public/images/next.png);
+    }
+    .who-are-we {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 50px 50px 0;
+      h3 {
+        @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-left capitalize text-[#ffffff];
+      }
+      p {
+        @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-left text-[#ffffff] px-0 pb-[34px];
+      }
+
+      .para {
+        width: 50%;
+      }
     }
   }
 }

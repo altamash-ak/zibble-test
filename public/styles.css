@@ -674,7 +674,7 @@ header nav ul .hoverdrop:hover .dropdown{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 797px;
+  width: 580px;
   flex-direction: column;
   gap: 20px;
   padding-top: 190px;
@@ -686,11 +686,11 @@ header nav ul .hoverdrop:hover .dropdown{
 .hero .wrapper h1{
   text-align: center;
   font-family: Merriweather;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
   font-style: normal;
-  line-height: 60px;
+  line-height: 48px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -698,10 +698,10 @@ header nav ul .hoverdrop:hover .dropdown{
 .hero .wrapper p{
   text-align: center;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   font-style: normal;
-  line-height: 28px;
+  line-height: 21px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -711,7 +711,7 @@ header nav ul .hoverdrop:hover .dropdown{
   /* the parent */
 }
 
-.awards .wrapper h1{
+.awards .wrapper h2{
   text-align: center;
   font-family: Merriweather;
   font-size: 50px;
@@ -759,6 +759,7 @@ header nav ul .hoverdrop:hover .dropdown{
 
 .awards .wrapper .prev-arrow {
   left: -50px;
+  top: 60%;
   width: 33px;
   height: 33px;
   background: url(../public/images/back.png);
@@ -766,9 +767,48 @@ header nav ul .hoverdrop:hover .dropdown{
 
 .awards .wrapper .next-arrow {
   right: -50px;
+  top: 60%;
   width: 33px;
   height: 33px;
   background: url(../public/images/next.png);
+}
+
+.awards .wrapper .who-are-we {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 50px 50px 0;
+}
+
+.awards .wrapper .who-are-we h3{
+  text-align: left;
+  font-family: Merriweather;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.awards .wrapper .who-are-we p{
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 34px;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.awards .wrapper .who-are-we .para {
+  width: 50%;
 }
 
 .neon-btn{
