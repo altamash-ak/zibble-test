@@ -15,13 +15,23 @@
     />
     <meta property="og:image" content="https://www.example.com/image.jpg" />
     <meta property="og:url" content="https://www.example.com/page" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
     <link rel="stylesheet" href="public/styles.css" />
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <img src="./public/images/logo.svg" alt="logo" />
+        <a href="/">
+          <img src="./public/images/logo.svg" alt="logo" />
+        </a>
       </div>
       <nav>
         <ul>
@@ -41,12 +51,82 @@
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
-      <div class="button">
-        <a href="#">get a free quote</a>
+      <div>
+        <a href="#" class="neon-btn glow">get a free quote</a>
       </div>
     </header>
-    <section class="top"></section>
-    <section class="middle"></section>
+    <section class="hero">
+      <div class="wrapper">
+        <h1>Get a custom logo design by Brands Design.</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, Lorem Ipsum is simply dummy.
+        </p>
+        <div>
+          <a href="#" class="neon-btn glow">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section class="awards">
+      <div class="wrapper">
+        <h2>Awards</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, Lorem Ipsum is simply dummy.
+        </p>
+        <div class="awards-slider">
+          <div><img src="./public/images/slide1.png" alt="slide1" /></div>
+          <div><img src="./public/images/slide2.png" alt="slide2" /></div>
+          <div><img src="./public/images/slide3.png" alt="slide3" /></div>
+          <div><img src="./public/images/slide4.png" alt="slide4" /></div>
+          <div><img src="./public/images/slide1.png" alt="slide1" /></div>
+          <div><img src="./public/images/slide2.png" alt="slide2" /></div>
+          <div><img src="./public/images/slide3.png" alt="slide3" /></div>
+          <div><img src="./public/images/slide4.png" alt="slide4" /></div>
+        </div>
+        <div class="who-are-we">
+          <div class="man-image">
+            <img src="./public/images/man.png" alt="man" />
+          </div>
+          <div class="para">
+            <h3>Who Are We</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard .Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, Lorem Ipsum
+              is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard .
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard .Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer></footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

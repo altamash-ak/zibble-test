@@ -79,22 +79,74 @@ header nav ul .hoverdrop::after {
 header nav ul .hoverdrop:hover .dropdown {
   @apply block;
 }
-.top {
+
+.hero {
   background: url(../public/images/hero-bg.png);
-  @apply h-[100vh];
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  @apply h-[764px] bg-no-repeat bg-top bg-cover;
+}
+.hero .wrapper {
+  @apply text-[#ffffff] text-center w-[797px] flex flex-col mx-auto pt-[190px] gap-[20px];
+}
+.hero .wrapper h1 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+}
+.hero .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff];
 }
 
-.middle {
-  background: red;
-  @apply h-[100vh];
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+.awards .wrapper {
+  /* the slides */
+  /* the parent */
+}
+.awards .wrapper h1 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+}
+.awards .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
+}
+.awards .wrapper .awards-slider {
+  @apply w-[90%] mx-auto pt-[50px];
+}
+.awards .wrapper .slick-slide {
+  margin: 0 20px;
+}
+.awards .wrapper .slick-list {
+  margin: 0 -20px;
+}
+.awards .wrapper .slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.awards .wrapper .prev-arrow {
+  left: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/back.png);
+}
+.awards .wrapper .next-arrow {
+  right: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/next.png);
+}
+
+.neon-btn {
+  @apply text-[#fff] py-[10px] px-[25px] font-medium bg-transparent cursor-pointer transition-all duration-300 ease-in-out relative inline-block rounded-[50px] font-openSans capitalize text-[13px] leading-[21px];
+}
+
+.glow {
+  @apply text-[#ffffff] border-solid border border-[#694eff];
+  box-shadow: 0 0 5px #694eff, 0 0 5px #694eff inset;
+}
+
+.glow:before {
+  @apply h-[0%] w-[2px];
+}
+
+.glow:hover {
+  @apply text-[#fff];
+  box-shadow: inset 0 0 10px #694eff, 0 0 20px #694eff inset, 0 0 20px #694eff inset;
 }
 
 /*# sourceMappingURL=sass.css.map */

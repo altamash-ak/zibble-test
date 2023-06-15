@@ -51,22 +51,61 @@ header {
       }
     }
   }
-  .button {
+}
+.hero {
+  background: url(../public/images/hero-bg.png);
+  @apply h-[764px] bg-no-repeat bg-top bg-cover;
+  .wrapper {
+    @apply text-[#ffffff] text-center w-[797px] flex flex-col mx-auto pt-[190px] gap-[20px];
+    h1 {
+      @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+    }
+    p {
+      @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff];
+    }
   }
 }
-.top {
-  background: url(../public/images/hero-bg.png);
-  @apply h-[100vh];
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-}
-.middle {
-  background: red;
-  @apply h-[100vh];
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+
+.awards {
+  .wrapper {
+    h1 {
+      @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+    }
+    p {
+      @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
+    }
+    .awards-slider {
+      @apply w-[90%] mx-auto pt-[50px];
+      div {
+        img {
+        }
+      }
+    }
+    /* the slides */
+    .slick-slide {
+      margin: 0 20px;
+    }
+
+    /* the parent */
+    .slick-list {
+      margin: 0 -20px;
+    }
+    .slide-arrow {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+    }
+    .prev-arrow {
+      left: -50px;
+      width: 33px;
+      height: 33px;
+      background: url(../public/images/back.png);
+    }
+    .next-arrow {
+      right: -50px;
+      width: 33px;
+      height: 33px;
+      background: url(../public/images/next.png);
+    }
+  }
 }
