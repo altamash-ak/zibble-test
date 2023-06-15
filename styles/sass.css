@@ -1,15 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-p {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+html {
+  @apply box-border h-full;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
 }
 
 body {
-  @apply bg-slate-700;
+  @apply h-full;
 }
-body p {
-  @apply text-black;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  @apply max-w-[1920px] m-auto relative overflow-x-clip bg-[#0F0823];
+}
+
+header {
+  @apply flex justify-between items-center absolute top-0 w-full pt-[30px] px-[60px];
+}
+header .logo img {
+  @apply w-[130px];
+}
+header nav ul {
+  @apply flex gap-[30px];
+}
+header nav ul li {
+  @apply cursor-pointer;
+}
+header nav ul li a {
+  @apply font-openSans not-italic font-normal text-[18px] leading-[18px] text-[#ffffff] capitalize p-[10px];
+}
+header nav ul .hoverdrop {
+  @apply relative;
+}
+header nav ul .hoverdrop .dropdown {
+  @apply absolute hidden w-max bg-[#ffffff] right-1/2 rounded-[5px];
+  transform: translate(50%, 6%);
+}
+header nav ul .hoverdrop .dropdown li {
+  @apply cursor-pointer;
+}
+header nav ul .hoverdrop .dropdown li a {
+  @apply block p-[10px] text-[#000000] ease-in-out duration-200 transition-all;
+}
+header nav ul .hoverdrop .dropdown li:hover {
+  @apply bg-[#4f62c0] ease-in-out duration-500 transition-all;
+}
+header nav ul .hoverdrop .dropdown li:hover a {
+  @apply text-[#ffffff];
+}
+header nav ul .hoverdrop .dropdown li:first-child {
+  @apply rounded-t-[5px];
+}
+header nav ul .hoverdrop .dropdown li:last-child {
+  @apply rounded-b-[5px];
+}
+header nav ul .hoverdrop::after {
+  content: "";
+  background: url(../public/images/arrow-down.svg);
+  @apply absolute w-[10px] h-full bg-no-repeat bg-center bg-contain -right-[10px];
+}
+header nav ul .hoverdrop:hover .dropdown {
+  @apply block;
+}
+
+.hero {
+  background: url(../public/images/hero-bg.png);
+  @apply h-[764px] bg-no-repeat bg-top bg-cover;
+}
+.hero .wrapper {
+  @apply text-[#ffffff] text-center w-[797px] flex flex-col mx-auto pt-[190px] gap-[20px];
+}
+.hero .wrapper h1 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+}
+.hero .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff];
+}
+
+.awards .wrapper {
+  /* the slides */
+  /* the parent */
+}
+.awards .wrapper h1 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+}
+.awards .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
+}
+.awards .wrapper .awards-slider {
+  @apply w-[90%] mx-auto pt-[50px];
+}
+.awards .wrapper .slick-slide {
+  margin: 0 20px;
+}
+.awards .wrapper .slick-list {
+  margin: 0 -20px;
+}
+.awards .wrapper .slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.awards .wrapper .prev-arrow {
+  left: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/back.png);
+}
+.awards .wrapper .next-arrow {
+  right: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/next.png);
+}
+
+.neon-btn {
+  @apply text-[#fff] py-[10px] px-[25px] font-medium bg-transparent cursor-pointer transition-all duration-300 ease-in-out relative inline-block rounded-[50px] font-openSans capitalize text-[13px] leading-[21px];
+}
+
+.glow {
+  @apply text-[#ffffff] border-solid border border-[#694eff];
+  box-shadow: 0 0 5px #694eff, 0 0 5px #694eff inset;
+}
+
+.glow:before {
+  @apply h-[0%] w-[2px];
+}
+
+.glow:hover {
+  @apply text-[#fff];
+  box-shadow: inset 0 0 10px #694eff, 0 0 20px #694eff inset, 0 0 20px #694eff inset;
 }
 
 /*# sourceMappingURL=sass.css.map */

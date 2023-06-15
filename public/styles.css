@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +39,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +56,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -419,7 +430,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -433,6 +444,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -466,7 +480,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -480,6 +494,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -513,27 +530,288 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-p {
-  border-radius: 0.25rem;
+html{
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+}
+
+body{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  position: relative;
+  margin: auto;
+  max-width: 1920px;
+  overflow-x: clip;
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-weight: 700;
+  background-color: rgb(15 8 35 / var(--tw-bg-opacity));
+}
+
+header{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+}
+
+header .logo img{
+  width: 130px;
+}
+
+header nav ul{
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li{
+  cursor: pointer;
+}
+
+header nav ul li a{
+  padding: 10px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 18px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+header nav ul .hoverdrop{
+  position: relative;
 }
 
-body p {
+header nav ul .hoverdrop .dropdown{
+  position: absolute;
+  right: 50%;
+  display: none;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 5px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  transform: translate(50%, 6%);
+}
+
+header nav ul .hoverdrop .dropdown li{
+  cursor: pointer;
+}
+
+header nav ul .hoverdrop .dropdown li a{
+  display: block;
+  padding: 10px;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header nav ul .hoverdrop .dropdown li:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 98 192 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header nav ul .hoverdrop .dropdown li:hover a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+header nav ul .hoverdrop .dropdown li:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+header nav ul .hoverdrop .dropdown li:last-child{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+header nav ul .hoverdrop::after {
+  content: "";
+  background: url(../public/images/arrow-down.svg);
+  position: absolute;
+  right: -10px;
+  height: 100%;
+  width: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav ul .hoverdrop:hover .dropdown{
+  display: block;
+}
+
+.hero {
+  background: url(../public/images/hero-bg.png);
+  height: 764px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hero .wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 797px;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 190px;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hero .wrapper h1{
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hero .wrapper p{
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.awards .wrapper {
+  /* the slides */
+  /* the parent */
+}
+
+.awards .wrapper h1{
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.awards .wrapper p{
+  padding-left: 290px;
+  padding-right: 290px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.awards .wrapper .awards-slider{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-top: 50px;
+}
+
+.awards .wrapper .slick-slide {
+  margin: 0 20px;
+}
+
+.awards .wrapper .slick-list {
+  margin: 0 -20px;
+}
+
+.awards .wrapper .slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.awards .wrapper .prev-arrow {
+  left: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/back.png);
+}
+
+.awards .wrapper .next-arrow {
+  right: -50px;
+  width: 33px;
+  height: 33px;
+  background: url(../public/images/next.png);
+}
+
+.neon-btn{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 21px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow{
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(105 78 255 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  box-shadow: 0 0 5px #694eff, 0 0 5px #694eff inset;
+}
+
+.glow:before{
+  height: 0%;
+  width: 2px;
+}
+
+.glow:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  box-shadow: inset 0 0 10px #694eff, 0 0 20px #694eff inset, 0 0 20px #694eff inset;
 }
 
 /*# sourceMappingURL=styles.css.map */
