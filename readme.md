@@ -15,3 +15,5 @@ npm run build
 npm run sass:watch
 npm run tailwind:watch
 ```
+
+# after running the commands use live server extension to run it
