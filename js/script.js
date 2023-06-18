@@ -33,3 +33,21 @@ $(".awards-slider").slick({
     },
   ],
 });
+
+// portfolio masonry script
+$(function () {
+  var filterList = {
+    init: function () {
+      $("#gallery").mixItUp({
+        selectors: {
+          target: ".gallery-item",
+          filter: ".filter",
+        },
+        load: {
+          filter: ".print, .strategy, .logo, .web",
+        },
+      });
+    },
+  };
+  filterList.init();
+});

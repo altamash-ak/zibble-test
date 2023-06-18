@@ -23,3 +23,7 @@ body {
 body {
   @apply max-w-[1920px] m-auto relative overflow-x-clip bg-[#0F0823];
 }
+
+section {
+  @apply pt-[70px];
+}

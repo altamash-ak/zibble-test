@@ -31,6 +31,10 @@ body {
   @apply max-w-[1920px] m-auto relative overflow-x-clip bg-[#0F0823];
 }
 
+section {
+  @apply pt-[70px];
+}
+
 header {
   @apply flex justify-between items-center absolute top-0 w-full pt-[30px] px-[60px];
 }
@@ -95,18 +99,18 @@ header nav ul .hoverdrop:hover .dropdown {
 }
 
 .awards .wrapper {
-  @apply pt-[70px];
+  @apply relative;
   /* the slides */
   /* the parent */
 }
 .awards .wrapper h2 {
-  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff];
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff] mb-[18px];
 }
 .awards .wrapper p {
   @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
 }
 .awards .wrapper .awards-slider {
-  @apply w-[90%] mx-auto pt-[50px];
+  @apply w-[90%] mx-auto pt-[50px] absolute top-[100px] right-0 left-0;
 }
 .awards .wrapper .slick-slide {
   margin: 0 20px;
@@ -127,11 +131,10 @@ header nav ul .hoverdrop:hover .dropdown {
 }
 .awards .wrapper .who-are-we {
   background: url(../public/images/who-are-we.png);
-  @apply flex items-center
-        justify-center gap-[80px] pt-[50px] px-[50px];
+  @apply flex items-center justify-center gap-[80px] pt-[120px] px-[50px] mt-[120px] bg-cover bg-center bg-no-repeat;
 }
 .awards .wrapper .who-are-we h3 {
-  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-left capitalize text-[#ffffff];
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-left capitalize text-[#ffffff] mb-[29px];
 }
 .awards .wrapper .who-are-we p {
   @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-left text-[#ffffff] px-0 pb-[34px];
@@ -141,6 +144,234 @@ header nav ul .hoverdrop:hover .dropdown {
 }
 .awards .wrapper .who-are-we .para {
   @apply w-[75%];
+}
+.awards .wrapper .who-are-we-services {
+  @apply grid gap-[58px] pt-[50px] px-[60px] h-[200px];
+  grid-template-columns: repeat(4, 1fr);
+}
+.awards .wrapper .who-are-we-services .total-services {
+  @apply flex items-center p-[10px] relative rounded-[10px];
+  background: rgb(105, 78, 255);
+  background: -moz-linear-gradient(180deg, rgba(105, 78, 255, 0) 0%, rgba(105, 78, 255, 0) 35%, rgba(105, 78, 255, 0) 55%, rgb(105, 78, 255) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(105, 78, 255, 0) 0%, rgba(105, 78, 255, 0) 35%, rgba(105, 78, 255, 0) 55%, rgb(105, 78, 255) 100%);
+  background: linear-gradient(180deg, rgba(105, 78, 255, 0) 0%, rgba(105, 78, 255, 0) 35%, rgba(105, 78, 255, 0) 55%, rgb(105, 78, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#694eff",endColorstr="#694eff",GradientType=1);
+}
+.awards .wrapper .who-are-we-services .total-services .icon {
+  @apply bg-cover bg-no-repeat absolute bg-top p-[10px] rounded-[5px] flex items-center justify-center w-[120px] h-[120px] -left-[20px] top-[10px];
+  background: url(../public/images/waw-bg.png);
+}
+.awards .wrapper .who-are-we-services .total-services .icon img {
+  @apply w-[80%] h-auto;
+}
+.awards .wrapper .who-are-we-services .total-services .text {
+  @apply absolute right-[20px];
+}
+.awards .wrapper .who-are-we-services .total-services .text h4 {
+  @apply font-raleway not-italic font-bold text-[40px] leading-[48px] text-center capitalize text-[#ffffff] p-0 mb-[13px];
+}
+.awards .wrapper .who-are-we-services .total-services .text p {
+  @apply font-openSans not-italic font-normal text-[18px] leading-[26px] text-center text-[#ffffff] p-0 m-0;
+}
+
+.service .wrapper h2 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff] mb-[18px];
+}
+.service .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
+}
+.service .wrapper .services-results {
+  @apply grid gap-[15px] p-[40px];
+  grid-template-columns: repeat(4, 1fr);
+}
+.service .wrapper .services-results .services {
+  @apply rounded-[41px] py-[30px];
+  box-shadow: 0px 0px 20px 0px rgba(227, 176, 255, 0.75) inset;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(227, 176, 255, 0.75) inset;
+  -moz-box-shadow: 0px 0px 20px 0px rgba(227, 176, 255, 0.75) inset;
+}
+.service .wrapper .services-results .services h4 {
+  @apply font-merriweather not-italic font-bold text-[16px] leading-[24px] text-center capitalize text-[#ffffff];
+}
+.service .wrapper .services-results .services .spacer {
+  @apply border-[3px] border-solid border-[#694eff] w-[70px] mx-auto my-[15px];
+}
+.service .wrapper .services-results .services p {
+  @apply font-openSans not-italic font-normal text-[14px] leading-[22px] py-0 px-[10px] text-[#ffffff];
+}
+
+.contact {
+  background: url(../public/images/contact-bg.png);
+  @apply bg-cover bg-no-repeat bg-center py-[70px];
+}
+.contact .wrapper {
+  text-align: center;
+}
+.contact .wrapper h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0 280px;
+}
+.contact .wrapper .buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.contact .wrapper .buttons a:first-child {
+  background: #694eff;
+  border-radius: 28px;
+  padding: 15px 34px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.contact .wrapper .buttons a:last-child {
+  border: 1px solid #694eff;
+  border-radius: 28px;
+  padding: 15px 34px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.contact .wrapper .call {
+  display: flex;
+  justify-content: center;
+}
+.contact .wrapper .call p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact .wrapper .call p span {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: #b84af5;
+}
+
+.portfolio .wrapper .masonry .gallery-wrap,
+.portfolio .wrapper .masonry #gallery {
+  overflow: hidden;
+}
+.portfolio .wrapper .masonry #filters {
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.portfolio .wrapper .masonry #filters li {
+  float: left;
+}
+.portfolio .wrapper .masonry #filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.25s;
+}
+.portfolio .wrapper .masonry #filters li:hover span {
+  color: #000;
+}
+.portfolio .wrapper .masonry #filters li span.active {
+  background: #1fbae7;
+  color: #fff;
+}
+.portfolio .wrapper .masonry .gallery-item {
+  float: left;
+  width: 33.333%;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+.portfolio .wrapper .masonry .inside {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .wrapper .masonry .details,
+.portfolio .wrapper .masonry .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.portfolio .wrapper .masonry .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .wrapper .masonry .details h2 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+}
+.portfolio .wrapper .masonry .details p {
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+.portfolio .wrapper .masonry .inside img {
+  float: left;
+  width: 100%;
+}
+.portfolio .wrapper .masonry .overlay {
+  background: rgba(31, 186, 231, 0.8);
+  z-index: 1;
+  transition: all 0.7s ease-in-out;
+}
+.portfolio .wrapper .masonry .gallery-item:hover .details,
+.portfolio .wrapper .masonry .gallery-item:hover .overlay {
+  opacity: 1;
+}
+@media (max-width: 30em) {
+  .portfolio .wrapper .masonry .wrap {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .portfolio .wrapper .masonry .gallery-item {
+    float: none;
+    width: 100%;
+  }
 }
 
 .neon-btn {
