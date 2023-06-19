@@ -681,7 +681,7 @@ header nav ul .hoverdrop:hover .dropdown{
   width: 580px;
   flex-direction: column;
   gap: 20px;
-  padding-top: 190px;
+  padding-top: 120px;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -997,94 +997,141 @@ header nav ul .hoverdrop:hover .dropdown{
   padding-bottom: 70px;
 }
 
-.contact .wrapper {
+.contact .wrapper{
   text-align: center;
 }
 
-.contact .wrapper h2 {
-  font-family: "Raleway";
-  font-style: normal;
+.contact .wrapper h2{
+  margin-bottom: 18px;
+  padding-left: 240px;
+  padding-right: 240px;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 50px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
   text-transform: capitalize;
-  color: #ffffff;
-  padding: 0 280px;
+  font-style: normal;
+  line-height: 58px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.contact .wrapper .buttons {
+.contact .wrapper .buttons{
   display: flex;
-  gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.contact .wrapper .buttons a:first-child {
-  background: #694eff;
+.contact .wrapper .buttons a:first-child{
   border-radius: 28px;
-  padding: 15px 34px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 78 255 / var(--tw-bg-opacity));
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 34px;
+  padding-right: 34px;
+  font-family: Open Sans;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 28px;
-  color: #ffffff;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.contact .wrapper .buttons a:last-child {
-  border: 1px solid #694eff;
+.contact .wrapper .buttons a:last-child{
   border-radius: 28px;
-  padding: 15px 34px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(105 78 255 / var(--tw-border-opacity));
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 34px;
+  padding-right: 34px;
   text-align: center;
-  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.contact .wrapper .call {
+.contact .wrapper .call{
   display: flex;
   justify-content: center;
 }
 
-.contact .wrapper .call p {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ffffff;
+.contact .wrapper .call p{
   display: flex;
   align-items: center;
   gap: 20px;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 48px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.contact .wrapper .call p span {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+.contact .wrapper .call p span{
   text-align: center;
-  text-decoration-line: underline;
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: 700;
   text-transform: capitalize;
-  color: #b84af5;
+  font-style: normal;
+  line-height: 32px;
+  --tw-text-opacity: 1;
+  color: rgb(184 74 245 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.portfolio .wrapper h2{
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.portfolio .wrapper p{
+  padding-left: 290px;
+  padding-right: 290px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .portfolio .wrapper .masonry .gallery-wrap,
-.portfolio .wrapper .masonry #gallery {
+.portfolio .wrapper .masonry #gallery{
   overflow: hidden;
 }
 
-.portfolio .wrapper .masonry #filters {
-  margin: 1%;
-  padding: 0;
-  list-style: none;
+.portfolio .wrapper .masonry #filters{
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0px;
+  list-style: none;
 }
 
 .portfolio .wrapper .masonry #filters li {

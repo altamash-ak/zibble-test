@@ -89,7 +89,7 @@ header nav ul .hoverdrop:hover .dropdown {
   @apply h-[764px] bg-no-repeat bg-top bg-cover;
 }
 .hero .wrapper {
-  @apply text-[#ffffff] text-center w-[580px] flex flex-col mx-auto pt-[190px] gap-[20px];
+  @apply text-[#ffffff] text-center w-[580px] flex flex-col mx-auto pt-[120px] gap-[20px];
 }
 .hero .wrapper h1 {
   @apply font-merriweather not-italic font-bold text-[40px] leading-[48px] text-center capitalize text-[#ffffff];
@@ -205,85 +205,43 @@ header nav ul .hoverdrop:hover .dropdown {
   @apply bg-cover bg-no-repeat bg-center py-[70px];
 }
 .contact .wrapper {
-  text-align: center;
+  @apply text-center;
 }
 .contact .wrapper h2 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
-  padding: 0 280px;
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[58px] text-center capitalize text-[#ffffff] mb-[18px] px-[240px];
 }
 .contact .wrapper .buttons {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
+  @apply flex gap-[30px] items-center justify-center py-[20px];
 }
 .contact .wrapper .buttons a:first-child {
-  background: #694eff;
-  border-radius: 28px;
-  padding: 15px 34px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #ffffff;
+  @apply bg-[#694eff] rounded-[28px] py-[15px] px-[34px] font-openSans not-italic font-normal text-[16px] leading-[28px] text-[#ffffff];
 }
 .contact .wrapper .buttons a:last-child {
-  border: 1px solid #694eff;
-  border-radius: 28px;
-  padding: 15px 34px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  color: #ffffff;
+  @apply border-[1px] border-solid border-[#694eff] rounded-[28px] py-[15px] px-[34px] font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff];
 }
 .contact .wrapper .call {
-  display: flex;
-  justify-content: center;
+  @apply flex justify-center;
 }
 .contact .wrapper .call p {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  @apply font-openSans not-italic font-bold text-[40px] leading-[48px] text-[#ffffff] flex items-center gap-[20px];
 }
 .contact .wrapper .call p span {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  text-decoration-line: underline;
-  text-transform: capitalize;
-  color: #b84af5;
+  @apply font-merriweather not-italic font-bold text-[24px] leading-[32px] text-center underline capitalize text-[#b84af5];
 }
 
+.portfolio .wrapper h2 {
+  @apply font-merriweather not-italic font-bold text-[50px] leading-[60px] text-center capitalize text-[#ffffff] mb-[18px];
+}
+.portfolio .wrapper p {
+  @apply font-openSans not-italic font-normal text-[16px] leading-[28px] text-center text-[#ffffff] px-[290px];
+}
 .portfolio .wrapper .masonry .gallery-wrap,
 .portfolio .wrapper .masonry #gallery {
-  overflow: hidden;
+  @apply overflow-hidden;
 }
 .portfolio .wrapper .masonry #filters {
-  margin: 1%;
-  padding: 0;
+  @apply overflow-hidden flex items-center p-0 justify-center m-8;
   list-style: none;
-  overflow: hidden;
 }
 .portfolio .wrapper .masonry #filters li {
   float: left;
